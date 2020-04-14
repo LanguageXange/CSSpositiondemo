@@ -1,0 +1,125 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Positioning Demo</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: lightgrey;
+      }
+      .parent {
+        margin: 0;
+        background-color: grey;
+        color: white;
+        width: 80vw;
+        height: 100vh;
+        position: relative;
+        top: 50px;
+        left: 150px;
+      }
+      .child-first {
+        background-color: purple;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+      }
+      .child-two {
+        background-color: rgb(0, 255, 191);
+        position: relative;
+        top: 35px;
+        left: 25px;
+      }
+      .child-three {
+        background-color: pink;
+        position: relative;
+        top: 20px;
+        left: 85px;
+      }
+      .child-four {
+        background-color: tomato;
+        position: relative;
+        top: 5px;
+        left: 145px;
+      }
+      .child-five {
+        background-color: cyan;
+        position: relative;
+        top: -10px;
+        left: 200px;
+      }
+      .child-end {
+        background-color: purple;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+      }
+      span {
+        font-size: 2rem;
+      }
+
+      .fixed {
+        position: fixed;
+        background-color: yellow;
+        color: black;
+        border: 2px solid black;
+        top: 30px;
+        left: 20px;
+      }
+      .static {
+        background-color: wheat;
+        width: 100px;
+        margin: 100px;
+        border: 2px solid black;
+        text-align: center;
+        color: black;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="parent">
+      <div class="child-first"><span>absolute</span></div>
+      <div class="child-two"><span>relative</span></div>
+      <div class="child-three"><span>relative</span></div>
+      <div class="child-four"><span>relative</span></div>
+      <div class="child-five"><span>relative</span></div>
+
+      <div class="child-two"><span>relative</span></div>
+      <div class="child-three"><span>relative</span></div>
+      <div class="child-four"><span>relative</span></div>
+      <div class="child-five"><span>relative</span></div>
+
+      <div class="child-two"><span>relative</span></div>
+      <div class="child-three"><span>relative</span></div>
+      <div class="child-four"><span>relative</span></div>
+      <div class="child-five"><span>relative</span></div>
+
+      <div class="child-two"><span>relative</span></div>
+      <div class="child-three"><span>relative</span></div>
+      <div class="child-four"><span>relative</span></div>
+      <div class="child-five"><span>relative</span></div>
+
+      <div class="child-two"><span>relative</span></div>
+      <div class="child-three"><span>relative</span></div>
+      <div class="child-four"><span>relative</span></div>
+      <div class="child-five"><span>relative</span></div>
+
+      <div class="child-two"><span>relative</span></div>
+      <div class="child-three"><span>relative</span></div>
+      <div class="child-four"><span>relative</span></div>
+      <div class="child-five"><span>relative</span></div>
+
+      <div class="static"><span>static</span></div>
+      <div class="static"><span>static</span></div>
+      <div class="static"><span>static</span></div>
+      <div class="static"><span>static</span></div>
+
+      <div class="child-end"><span>absolute</span></div>
+    </section>
+
+    <div class="fixed"><span>fixed when scroll</span></div>
+  </body>
+</html>
