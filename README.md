@@ -1,4 +1,3 @@
-# View live demo at https://languagexange.github.io/CSSpositiondemo/
+## View live demo at https://languagexange.github.io/CSSpositiondemo/
 CSS position:
-- static, relative, absolute, fixed 
-- sticky to be added later...
+- static, relative, absolute, fixed ( I didn't include sticky position in this demo)
