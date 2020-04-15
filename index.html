@@ -77,9 +77,20 @@
         color: black;
         float: right;
       }
+      
+      #progress{
+      position:fixed;
+        top:0;
+        left:0;
+        z-index:1;
+        border:10px solid orange;
+        width:0;
+      }
     </style>
   </head>
   <body>
+    <div id="progress"></div>
+    
     <section class="parent">
       <div class="child-first"><span>absolute</span></div>
       <div class="child-two"><span>relative</span></div>
@@ -122,5 +133,18 @@
     </section>
 
     <div class="fixed"><span>fixed when scroll</span></div>
+    
+    <script>
+      let progress = document.getElementById('progress');
+      window.addEventListener('scroll',e=>{
+      let Max = document.body.scrollHeight - innerHeight;
+        progress.style.width = `${(pageYOffset/Max)*100}%`
+      
+      });
+      
+      
+     </script> 
+    
+    
   </body>
 </html>
